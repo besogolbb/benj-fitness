@@ -18,6 +18,10 @@ const motion=require('./motion.js');
     for(const viewport of [{width:1440,height:1000},{width:390,height:844},{width:320,height:740}]){
       const context=await browser.newContext({viewport});const page=await context.newPage();page.on('pageerror',e=>errors.push(e.message));
       await page.goto(base);await page.getByRole('heading',{name:"Let's keep moving, Benj."}).waitFor();
+      if(viewport.width<=760){
+        assert.equal(await page.evaluate(()=>getComputedStyle(document.documentElement).fontSize),'16px','Mobile body text must be readable');
+        assert.ok(await page.locator('#checkin label').first().evaluate(node=>parseFloat(getComputedStyle(node).fontSize)>=16),'Mobile form labels must be at least 16px');
+      }
       await page.waitForFunction(()=>{const image=document.querySelector('.photo-band img');return image?.complete&&image.naturalWidth>0;});
       await page.screenshot({path:path.join(qa,`today-${viewport.width}.png`),fullPage:true});
       for(const route of ['today','food','cardio','resistance','fitness','progress','profile']){

@@ -16,5 +16,16 @@
   .fitness-library{display:none}.mobile-exercise-picker{display:block;margin-bottom:18px}.fitness-layout{grid-template-columns:1fr;border-top:0;padding:0;gap:20px}.movement-guide h2{font-size:20px;line-height:1.35}.movement-guide .exercise-head{gap:8px}.coach-stage{height:310px;margin-top:16px}.movement-svg{max-height:310px;margin-top:16px}.movement-controls{gap:10px;flex-wrap:wrap}.movement-controls label{max-width:150px;gap:8px}.movement-toggle{width:46px;height:46px;min-height:46px}.movement-speed{width:120px;min-height:44px}.movement-scrub{min-height:32px}.movement-steps{font-size:14px}.camera-views button{min-height:38px;padding:7px 10px}.coach-meta{flex-wrap:wrap}.movement-state{font-size:10px}
   .mobile-sync-status{display:block;font-size:10px;color:#c6d4c9;margin-top:10px;line-height:1.5}
   dialog{width:calc(100% - 24px);padding:20px 16px;max-height:calc(100dvh - 36px)}dialog .coach-stage{height:230px}dialog .movement-svg{max-height:220px}dialog .coach-meta{gap:8px}dialog .camera-views button{min-height:36px}#toast{bottom:calc(86px + env(safe-area-inset-bottom));width:max-content;max-width:calc(100% - 32px)}footer{padding-bottom:10px}
+  :root{font-size:16px}
+  h3,.exercise h3{font-size:17px;line-height:1.45}
+  label,.intro p,.session p,.exercise p,.note,.empty,.check-line,.split-metric,.movement-steps{font-size:16px}
+  .button,.link-button,.list-row strong,.row-right b{font-size:16px}
+  .stat-label,.stat-value small,.session-time,.pill,.intro .pill,.photo-label,.list-row small,.calorie-preview p,.calorie-preview small,.camera-views button{font-size:14px}
+  .stat-note,.coach-phase,.movement-controls label,.movement-speed-value,.movement-state,.scrub-label,.exercise-count,.mobile-sync-status,footer,table{font-size:13px}
+  .eyebrow,.date-label,.brand-sub,.set-head,.set-row span,.tag,.day span,th{font-size:12px}
+  .day,.day strong{font-size:14px}.day{flex-basis:88px}
+  nav a{font-size:11px}.brand-sub{font-size:10px}
+  .session-editor{flex-wrap:wrap}.exercise-tools{flex-wrap:wrap}
+  .set-row span{overflow-wrap:anywhere}.calorie-preview p{max-width:100%}
 }
 @media(max-width:380px){.header-right{max-width:137px;flex-wrap:wrap;justify-content:flex-end}.header-right .avatar{display:none}.form-grid{grid-template-columns:1fr}.set-head,.set-row{grid-template-columns:20px minmax(55px,1fr) minmax(55px,1fr) 40px 26px;gap:5px}.calorie-preview{flex-wrap:wrap}.calorie-preview p{max-width:100%}.stat-value{font-size:23px}.coach-stage{height:280px}.movement-state{display:none}}
