@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#176b50"><title>Benj Fitness</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="assets/vendor.js" defer></script><script src="exercise-library.js" defer></script><script src="motion.js" defer></script><script src="coach3d.js" defer></script>
+  <script src="fitness.js" defer></script><script src="cloud.js" defer></script><script src="app.js" defer></script>
+</head>
+<body>
+  <aside class="sidebar"><a class="brand" href="#today"><span class="brand-icon">b.</span><span>benj fitness<span class="brand-sub">A LITTLE STRONGER EVERY DAY</span></span></a>
+    <small class="mobile-sync-status" data-sync-status>Saved on this device</small><nav aria-label="Main navigation"></nav>
+    <div class="sidebar-bottom"><span class="status-dot"></span> Your personal journal<br><small id="save-status">Opening your journal...</small></div>
+  </aside>
+  <div class="shell"><header><div><span class="eyebrow">MAKE ROOM FOR YOURSELF</span><h1 id="page-title">Today</h1></div><div class="header-right"><label class="date-label">Journal date<input id="journal-date" type="date" required></label><button class="avatar" title="Your profile" aria-label="Open profile">B</button></div></header>
+  <main id="main" aria-live="polite"></main><footer>Small steps. Consistent effort. Your pace.</footer></div>
+  <dialog id="tutorial"><div id="tutorial-content"></div><button id="close-dialog" class="button secondary">Close</button></dialog>
+  <div id="toast" role="status"></div>
+</body></html>

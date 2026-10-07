@@ -1,0 +1,13 @@
+{
+  "name": "benj-fitness",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build": "node build.cjs",
+    "start": "node server.cjs",
+    "test": "node verify.cjs && node --test server.test.cjs",
+    "test:browser": "node browser-check.cjs"
+  },
+  "dependencies": {"three": "0.180.0", "lucide": "0.468.0"},
+  "devDependencies": {"esbuild": "0.25.10", "playwright": "1.56.1"}
+}

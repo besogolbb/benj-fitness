@@ -1,0 +1,21 @@
+[Unit]
+Description=Benj Fitness private journal
+After=network.target
+
+[Service]
+Type=simple
+User=benj-fitness
+Group=benj-fitness
+WorkingDirectory=/opt/benj-fitness
+EnvironmentFile=/etc/benj-fitness.env
+ExecStart=/usr/bin/node /opt/benj-fitness/server.cjs
+Restart=on-failure
+UMask=0077
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=strict
+ProtectHome=true
+ReadWritePaths=/var/lib/benj-fitness
+
+[Install]
+WantedBy=multi-user.target

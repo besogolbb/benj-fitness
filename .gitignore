@@ -1,0 +1,12 @@
+node_modules/
+.private-data/
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.zip
+data/
+backups/
+qa/
+*.log
